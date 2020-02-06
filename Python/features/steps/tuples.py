@@ -1,8 +1,8 @@
 from behave import *
 
-@given(u'a = tuple(4.3, -4.2, 1.0)')
+@given(u'a = tuple(4.3, -4.2, 3.1, 1.0)')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Given a = tuple(4.3, -4.2, 1.0)')
+    raise NotImplementedError(u'STEP: Given a = tuple(4.3, -4.2, 3.1, 1.0)')
 
 
 @then(u'a.x = 4.3')
@@ -33,3 +33,23 @@ def step_impl(context):
 @then(u'a is not a vector')
 def step_impl(context):
     raise NotImplementedError(u'STEP: Then a is not a vector')
+
+
+@given(u'a = tuple(4.3, -4.2, 3.1, 0,0)')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a = tuple(4.3, -4.2, 3.1, 0,0)')
+
+
+@then(u'a.w = 0.0')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then a.w = 0.0')
+
+
+@then(u'a is not a point')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then a is not a point')
+
+
+@then(u'a is a vector')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then a is a vector')
