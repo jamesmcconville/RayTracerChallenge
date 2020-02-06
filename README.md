@@ -1,1 +1,3 @@
 # RayTracerChallenge
+
+James McConville
