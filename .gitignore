@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/cs/RayTracerChallenge/RayTracerChallenge.Lib/obj
+/cs/RayTracerChallenge/.vs/RayTracerChallenge
+/cs/RayTracerChallenge/RayTracerChallenge.Lib/bin/Debug/netstandard2.1
+/cs/RayTracerChallenge/RayTracerChallenge.Lib.Tests/bin/Debug/netcoreapp3.1
+/cs/RayTracerChallenge/RayTracerChallenge.Lib.Tests/obj/Debug/netcoreapp3.1
+/cs/RayTracerChallenge/RayTracerChallenge.Lib.Tests/obj
