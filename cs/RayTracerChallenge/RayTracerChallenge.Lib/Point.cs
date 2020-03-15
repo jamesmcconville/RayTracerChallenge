@@ -42,7 +42,10 @@ namespace RayTracerChallenge.Lib
 
         public override int GetHashCode()
         {
-            return X.GetHashCode() * 2 + Y.GetHashCode() + 4 * Z.GetHashCode() + 8 * W.GetHashCode();
+            return X.GetHashCode() +
+                2 * Y.GetHashCode() +
+                4 * Z.GetHashCode() +
+                8 * W.GetHashCode();
         }
     }
 }

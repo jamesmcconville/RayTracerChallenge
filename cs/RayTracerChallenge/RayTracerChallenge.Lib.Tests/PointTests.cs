@@ -1,7 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RayTracerChallenge.Lib.Tests
 {
@@ -12,7 +9,7 @@ namespace RayTracerChallenge.Lib.Tests
         public void NewPoint_CreatesTupleWithW1()
         {
             // Arrange 
-            var point = new Point(4, -4, 3);
+            var point = new Point(4, -4, 3); 
 
             // Act
             // Assert

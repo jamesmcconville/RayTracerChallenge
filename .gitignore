@@ -133,3 +133,5 @@ dmypy.json
 /cs/RayTracerChallenge/RayTracerChallenge.Lib.Tests/bin/Debug/netcoreapp3.1
 /cs/RayTracerChallenge/RayTracerChallenge.Lib.Tests/obj/Debug/netcoreapp3.1
 /cs/RayTracerChallenge/RayTracerChallenge.Lib.Tests/obj
+/cs/RayTracerChallenge/RayTracerChallenge.ProjectileDemo/bin/Debug/netcoreapp3.1
+/cs/RayTracerChallenge/RayTracerChallenge.ProjectileDemo/obj

@@ -15,8 +15,7 @@ namespace RayTracerChallenge.Lib
         public double Magnitude() => Math.Sqrt(X * X + Y * Y + Z * Z + W * W);
         public Vector Normalize() => new Vector(X / Magnitude(), Y / Magnitude(), Z / Magnitude());
         public double Dot(Vector v) => X * v.X + Y * v.Y + Z * v.Z + W * v.W;
-
-
+        public Vector Cross(Vector v) => new Vector(Y * v.Z - Z * v.Y, Z * v.X - X * v.Z, X * v.Y - Y * v.X);
         public static Vector operator +(Vector v1, Vector v2)
         {
             var x = v1.X + v2.X;

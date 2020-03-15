@@ -6,12 +6,6 @@ namespace RayTracerChallenge.Lib.Tests
     [TestFixture]
     class VectorTests
     {
-        [SetUp]
-        public void Setup()
-        {
-
-        }
-
         [Test]
         public void NewVector_CreatesTupleWithW0()
         {
@@ -152,7 +146,7 @@ namespace RayTracerChallenge.Lib.Tests
         }
 
         [Test]
-        public void GetDotProductOfTwoVectors_ReturnsDotProduct()
+        public void GetDotProductOfTwoVectors_ReturnsScalar()
         {
             // Arrange
             var vector1 = new Vector(1, 2, 3);
@@ -163,6 +157,22 @@ namespace RayTracerChallenge.Lib.Tests
 
             // Assert
             Assert.AreEqual(20.0, dot);
+        }
+
+        [Test]
+        public void GetCrossProductOfTwoVectors_ReturnsVector()
+        {
+            // Arrange
+            var vector1 = new Vector(1, 2, 3);
+            var vector2 = new Vector(2, 3, 4);
+
+            // Act
+            var cross1 = vector1.Cross(vector2);
+            var cross2 = vector2.Cross(vector1);
+
+            // Assert
+            Assert.AreEqual(new Vector(-1, 2, -1), cross1);
+            Assert.AreEqual(new Vector(1, -2, 1), cross2);
         }
     }
 }
