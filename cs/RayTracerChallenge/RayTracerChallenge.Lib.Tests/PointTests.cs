@@ -6,13 +6,16 @@ namespace RayTracerChallenge.Lib.Tests
     public class PointTests
     {
         [Test]
-        public void NewPoint_CreatesTupleWithW1()
+        public void Ctor_PropertiesInitialized()
         {
             // Arrange 
-            var point = new Point(4, -4, 3); 
-
             // Act
+            var point = new Point(4, -4, 3);
+
             // Assert
+            Assert.AreEqual(4.0, point.X);
+            Assert.AreEqual(-4.0, point.Y);
+            Assert.AreEqual(3.0, point.Z);
             Assert.AreEqual(1.0, point.W);
         }
 

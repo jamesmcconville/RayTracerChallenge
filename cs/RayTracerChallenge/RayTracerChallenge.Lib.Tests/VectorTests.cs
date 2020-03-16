@@ -7,13 +7,16 @@ namespace RayTracerChallenge.Lib.Tests
     class VectorTests
     {
         [Test]
-        public void NewVector_CreatesTupleWithW0()
+        public void Ctor_PropertiesInitialized()
         {
             // Arrange 
+            // Act
             var vector = new Vector(4, -4, 3);
 
-            // Act
             // Assert
+            Assert.AreEqual(4.0, vector.X);
+            Assert.AreEqual(-4.0, vector.Y);
+            Assert.AreEqual(3.0, vector.Z);
             Assert.AreEqual(0.0, vector.W);
         }
 
